@@ -47,15 +47,12 @@ body::before {
     border-radius: 50%;
     box-shadow: 0 0 50px rgba(245, 230, 168, 0.6);
 }
-
 .moon::after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 35px;
-    width: 110px;
-    height: 110px;
-    background: #0c1025;
+    top: 12px;
+    left: 38px;
+    width: 105px;
+    height: 105px;
+    background: rgba(12, 16, 37, 0.85);
     border-radius: 50%;
 }
 
@@ -148,8 +145,59 @@ input {
     justify-content: space-between;
     margin-bottom: 15px;
 }
-
 .time {
     font-size: 19px;
     font-weight: 600;
+    white-space: nowrap;   /* 🔥 prevents AM/PM from going to next line */
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px;
+        align-items: flex-start;
+    }
+
+    .container {
+        padding: 25px;
+        margin-top: 60px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;  /* 🔥 stack cards vertically */
+        gap: 20px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .row {
+        font-size: 14px;
+    }
+
+    .time {
+        font-size: 16px;
+    }
+
+    .moon {
+        width: 70px;
+        height: 70px;
+        top: 40px;
+        right: 30px;
+    }
+
+    .moon::after {
+        width: 70px;
+        height: 70px;
+    }
+
+    .mosque {
+        height: 120px;
+    }
 }
