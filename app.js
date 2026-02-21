@@ -18,7 +18,7 @@ document.getElementById("city").addEventListener("input",function(){
         if(this.value.trim()!==""){
             fetchTimings(this.value.trim());
         }
-    },700);
+    },350);
 });
 
 async function fetchTimings(city){
