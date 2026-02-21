@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramadan Timings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="moon"></div>
+    <div class="mosque"></div>
+
+    <div class="container">
+        <h1 id="hijriHeading">-- Ramadan 1447 AH</h1>
+        <div class="gregorian" id="gregDate"></div>
+
+        <input type="text" id="city" placeholder="Enter City (e.g. Hyderabad)" />
+
+        <div class="grid">
+            <div class="card">
+                <div class="title sunni">HANAFI (SUNNI)</div>
+                <div class="row">
+                    <span>Sehri</span>
+                    <span class="time" id="sehriSunni">--:--</span>
+                </div>
+                <div class="row">
+                    <span>Iftar</span>
+                    <span class="time" id="iftarSunni">--:--</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="title shia">JAFRI (SHIA)</div>
+                <div class="row">
+                    <span>Sehri</span>
+                    <span class="time" id="sehriShia">--:--</span>
+                </div>
+                <div class="row">
+                    <span>Iftar</span>
+                    <span class="time" id="iftarShia">--:--</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js">
+
+    </script>
+
+</body>
+
+</html>
